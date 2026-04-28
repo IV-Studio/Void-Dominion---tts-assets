@@ -13,16 +13,16 @@ Use GitHub Pages with:
 
 | Asset | Path | TTS Width | TTS Height | Number | PNG Size |
 |---|---|---:|---:|---:|---:|
-| objective_deck_3rows_6cols | `cards/objective_deck_3rows_6cols.png` | 6 | 3 | 18 | 4092x2865 |
-| objective_card_back_1row_1col | `cards/objective_card_back_1row_1col.png` | 1 | 1 | 1 | 2926x4096 |
-| ship_reference_1row_1col | `cards/ship_reference_1row_1col.png` | 1 | 1 | 1 | 4096x1911 |
-| system_tokens_3rows_4cols | `tokens/system_tokens_3rows_4cols.png` | 4 | 3 | 12 | 4096x3072 |
+| objective_deck | `cards/objective_deck.png` | 6 | 3 | 18 | 4092x2865 |
+| objective_card_back | `cards/objective_card_back.png` | 1 | 1 | 1 | 2926x4096 |
+| ship_reference | `cards/ship_reference.png` | 1 | 1 | 1 | 4096x1911 |
+| system_tokens | `tokens/system_tokens.png` | 4 | 3 | 12 | 4096x3072 |
 
-Use `cards/objective_deck_3rows_6cols.png` as the objective deck face sheet.
-Use `cards/objective_card_back_1row_1col.png` as the objective deck back image.
+Use `cards/objective_deck.png` as the objective deck face sheet.
+Use `cards/objective_card_back.png` as the objective deck back image.
 
 Example hosted URL after publishing:
 
 ```text
-https://YOUR_USERNAME.github.io/void-dominion-tts-assets/cards/objective_deck_3rows_6cols.png
+https://YOUR_USERNAME.github.io/void-dominion-tts-assets/cards/objective_deck.png
 ```
