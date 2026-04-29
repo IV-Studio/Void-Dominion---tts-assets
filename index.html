@@ -59,6 +59,47 @@
       border-radius: 8px;
       overflow: hidden;
     }
+    .info-panel {
+      margin-top: 28px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .needed-list, .doc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      padding: 0;
+      margin: 14px 0 0;
+      list-style: none;
+    }
+    .needed-list li, .doc-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111422;
+      padding: 12px;
+    }
+    .needed-list strong, .needed-list span, .needed-list small, .doc-card span, .doc-card small {
+      display: block;
+    }
+    .needed-list span {
+      margin-top: 2px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .needed-list small, .doc-card small {
+      margin-top: 6px;
+      color: var(--muted);
+    }
+    .doc-card a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+    .doc-card span {
+      font-weight: 700;
+    }
     .asset-card a {
       display: block;
       min-height: 190px;
@@ -107,7 +148,65 @@
   <main>
     <h1>Void Dominion TTS Assets</h1>
     <p>Open an asset to verify it loads directly, or copy its URL and paste it into Tabletop Simulator custom object fields.</p>
+    <section class="info-panel">
+      <h2>Generic TTS Pieces</h2>
+      <p>These prototype components are not hosted image files. Create them directly in Tabletop Simulator using built-in cubes, pawns, markers, or a simple drawn track.</p>
+      <ul class="needed-list">
+        
+            <li>
+              <strong>Colony cubes</strong>
+              <span>20 per player</span>
+              <small>Use physical cubes or TTS built-in cubes. Regular cubes placed on surface slots</small>
+            </li>
+            
+            <li>
+              <strong>Outpost cube</strong>
+              <span>1 per player</span>
+              <small>Use tall cube or TTS built-in block. Counts as 2 dominion value while occupying 1 slot</small>
+            </li>
+            
+            <li>
+              <strong>Action pawns</strong>
+              <span>6 per player</span>
+              <small>Use physical pawns or TTS built-in pawns. Five normal action pawns plus room for extra action pawn effect</small>
+            </li>
+            
+            <li>
+              <strong>Turn order pawn</strong>
+              <span>1 per player</span>
+              <small>Use physical pawn or TTS built-in marker. Tracks turn order</small>
+            </li>
+            
+            <li>
+              <strong>VP marker</strong>
+              <span>1 per player</span>
+              <small>Use physical marker or TTS built-in marker. For VP track</small>
+            </li>
+            
+            <li>
+              <strong>VP track</strong>
+              <span>1</span>
+              <small>Not created. Can be built in TTS or added to a future board</small>
+            </li>
+            
+      </ul>
+    </section>
     
+            <section>
+              <h2>Rules</h2>
+              <ul class="doc-list">
+                
+                <li class="doc-card">
+                  <a href="rules/current_game_reference.pdf" target="_blank" rel="noopener">
+                    <span>Current Game Reference</span>
+                    <small>Rules PDF for the TTS table</small>
+                  </a>
+                  <button type="button" data-path="rules/current_game_reference.pdf">Copy URL</button>
+                </li>
+                
+              </ul>
+            </section>
+            
             <section>
               <h2>Boards</h2>
               <ul class="asset-grid">
@@ -138,6 +237,24 @@
               <ul class="asset-grid">
                 
                 <li class="asset-card">
+                  <a href="cards/bonus_icon_reference.png" target="_blank" rel="noopener">
+                    <img src="cards/bonus_icon_reference.png" alt="Bonus Icon Reference">
+                    <span>Bonus Icon Reference</span>
+                    <small>TTS Width 1 &middot; Height 1 &middot; Number 1 &middot; 4096x2895</small>
+                  </a>
+                  <button type="button" data-path="cards/bonus_icon_reference.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="cards/dice_reference.png" target="_blank" rel="noopener">
+                    <img src="cards/dice_reference.png" alt="Dice Reference">
+                    <span>Dice Reference</span>
+                    <small>TTS Width 1 &middot; Height 1 &middot; Number 1 &middot; 4096x2867</small>
+                  </a>
+                  <button type="button" data-path="cards/dice_reference.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
                   <a href="cards/objective_card_back.png" target="_blank" rel="noopener">
                     <img src="cards/objective_card_back.png" alt="Objective Card Back">
                     <span>Objective Card Back</span>
@@ -150,7 +267,7 @@
                   <a href="cards/objective_deck.png" target="_blank" rel="noopener">
                     <img src="cards/objective_deck.png" alt="Objective Deck">
                     <span>Objective Deck</span>
-                    <small>TTS Width 6 &middot; Height 3 &middot; Number 18 &middot; 4092x2865</small>
+                    <small>TTS Width 7 &middot; Height 3 &middot; Number 21 &middot; 4095x2457</small>
                   </a>
                   <button type="button" data-path="cards/objective_deck.png">Copy URL</button>
                 </li>
@@ -159,9 +276,18 @@
                   <a href="cards/ship_reference.png" target="_blank" rel="noopener">
                     <img src="cards/ship_reference.png" alt="Ship Reference">
                     <span>Ship Reference</span>
-                    <small>TTS Width 1 &middot; Height 1 &middot; Number 1 &middot; 4096x1911</small>
+                    <small>TTS Width 1 &middot; Height 1 &middot; Number 1 &middot; 4096x2472</small>
                   </a>
                   <button type="button" data-path="cards/ship_reference.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="cards/system_bonus_cards.png" target="_blank" rel="noopener">
+                    <img src="cards/system_bonus_cards.png" alt="System Bonus Cards">
+                    <span>System Bonus Cards</span>
+                    <small>TTS Width 4 &middot; Height 2 &middot; Number 8 &middot; 4096x2868</small>
+                  </a>
+                  <button type="button" data-path="cards/system_bonus_cards.png">Copy URL</button>
                 </li>
                 
               </ul>
@@ -172,12 +298,82 @@
               <ul class="asset-grid">
                 
                 <li class="asset-card">
-                  <a href="tokens/system_tokens.png" target="_blank" rel="noopener">
-                    <img src="tokens/system_tokens.png" alt="System Tokens">
-                    <span>System Tokens</span>
-                    <small>TTS Width 4 &middot; Height 3 &middot; Number 12 &middot; 4096x3072</small>
+                  <a href="tokens/sector_flags.png" target="_blank" rel="noopener">
+                    <img src="tokens/sector_flags.png" alt="Sector Flags">
+                    <span>Sector Flags</span>
+                    <small>TTS Width 3 &middot; Height 1 &middot; Number 3 &middot; 4095x1365</small>
                   </a>
-                  <button type="button" data-path="tokens/system_tokens.png">Copy URL</button>
+                  <button type="button" data-path="tokens/sector_flags.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="tokens/ship_tokens.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_tokens.png" alt="Ship Tokens">
+                    <span>Ship Tokens</span>
+                    <small>TTS Width 3 &middot; Height 3 &middot; Number 9 &middot; 4095x4095</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_tokens.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="tokens/utility_tokens.png" target="_blank" rel="noopener">
+                    <img src="tokens/utility_tokens.png" alt="Utility Tokens">
+                    <span>Utility Tokens</span>
+                    <small>TTS Width 5 &middot; Height 1 &middot; Number 5 &middot; 4095x819</small>
+                  </a>
+                  <button type="button" data-path="tokens/utility_tokens.png">Copy URL</button>
+                </li>
+                
+              </ul>
+            </section>
+            
+            <section>
+              <h2>Dice</h2>
+              <ul class="asset-grid">
+                
+                <li class="asset-card">
+                  <a href="dice/dice_aggressive_defense.png" target="_blank" rel="noopener">
+                    <img src="dice/dice_aggressive_defense.png" alt="Dice Aggressive Defense">
+                    <span>Dice Aggressive Defense</span>
+                    
+                  </a>
+                  <button type="button" data-path="dice/dice_aggressive_defense.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="dice/dice_bombardment.png" target="_blank" rel="noopener">
+                    <img src="dice/dice_bombardment.png" alt="Dice Bombardment">
+                    <span>Dice Bombardment</span>
+                    
+                  </a>
+                  <button type="button" data-path="dice/dice_bombardment.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="dice/dice_retreat.png" target="_blank" rel="noopener">
+                    <img src="dice/dice_retreat.png" alt="Dice Retreat">
+                    <span>Dice Retreat</span>
+                    
+                  </a>
+                  <button type="button" data-path="dice/dice_retreat.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="dice/dice_spicy_attack.png" target="_blank" rel="noopener">
+                    <img src="dice/dice_spicy_attack.png" alt="Dice Spicy Attack">
+                    <span>Dice Spicy Attack</span>
+                    
+                  </a>
+                  <button type="button" data-path="dice/dice_spicy_attack.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="dice/dice_standard_attack.png" target="_blank" rel="noopener">
+                    <img src="dice/dice_standard_attack.png" alt="Dice Standard Attack">
+                    <span>Dice Standard Attack</span>
+                    
+                  </a>
+                  <button type="button" data-path="dice/dice_standard_attack.png">Copy URL</button>
                 </li>
                 
               </ul>
