@@ -66,7 +66,7 @@
       border-radius: 8px;
       background: var(--panel);
     }
-    .needed-list, .doc-list {
+    .needed-list, .doc-list, .color-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 12px;
@@ -74,13 +74,14 @@
       margin: 14px 0 0;
       list-style: none;
     }
-    .needed-list li, .doc-card {
+    .needed-list li, .doc-card, .color-list li {
       border: 1px solid var(--line);
       border-radius: 8px;
       background: #111422;
       padding: 12px;
     }
-    .needed-list strong, .needed-list span, .needed-list small, .doc-card span, .doc-card small {
+    .needed-list strong, .needed-list span, .needed-list small, .doc-card span, .doc-card small,
+    .color-list strong, .color-list code, .color-list small {
       display: block;
     }
     .needed-list span {
@@ -99,6 +100,25 @@
     }
     .doc-card span {
       font-weight: 700;
+    }
+    .swatch {
+      width: 100%;
+      height: 38px;
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .color-list code {
+      margin-top: 3px;
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+    .color-list small {
+      margin-top: 6px;
+      color: var(--muted);
     }
     .asset-card a {
       display: block;
@@ -187,6 +207,111 @@
               <strong>VP track</strong>
               <span>1</span>
               <small>Not created. Can be built in TTS or added to a future board</small>
+            </li>
+            
+      </ul>
+    </section>
+    <section class="info-panel">
+      <h2>TTS Color Hexes</h2>
+      <p>Use these when tinting built-in cubes, pawns, markers, dice, or quick prototype objects in Tabletop Simulator.</p>
+      <ul class="color-list">
+        
+            <li>
+              <span class="swatch" style="background: #F4F4EE"></span>
+              <strong>P1 player pieces</strong>
+              <code>#F4F4EE</code>
+              <small>Ships, flags, colony cubes, outpost cube, pawns, VP marker</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #2F6FEA"></span>
+              <strong>P2 player pieces</strong>
+              <code>#2F6FEA</code>
+              <small>Ships, flags, colony cubes, outpost cube, pawns, VP marker</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #F2C84B"></span>
+              <strong>P3 player pieces</strong>
+              <code>#F2C84B</code>
+              <small>Ships, flags, colony cubes, outpost cube, pawns, VP marker</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #253147"></span>
+              <strong>Ship body fill</strong>
+              <code>#253147</code>
+              <small>Dark ship silhouette fill used by the token art</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #C65A3A"></span>
+              <strong>Standard Attack die</strong>
+              <code>#C65A3A</code>
+              <small>Warm combat die color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #CF4E62"></span>
+              <strong>Spicy Attack die</strong>
+              <code>#CF4E62</code>
+              <small>Warm combat die color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #D99A35"></span>
+              <strong>Bombardment die</strong>
+              <code>#D99A35</code>
+              <small>Warm combat die color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #3F83C5"></span>
+              <strong>Aggressive Defense die</strong>
+              <code>#3F83C5</code>
+              <small>Cool defense die color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #2FA6A0"></span>
+              <strong>Retreat die</strong>
+              <code>#2FA6A0</code>
+              <small>Cool defense die color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #63A66F"></span>
+              <strong>Green planets</strong>
+              <code>#63A66F</code>
+              <small>Planet/system color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #CF5050"></span>
+              <strong>Red planets</strong>
+              <code>#CF5050</code>
+              <small>Planet/system color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #866FC5"></span>
+              <strong>Nexus purple</strong>
+              <code>#866FC5</code>
+              <small>Center planet/system color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #D8DADF"></span>
+              <strong>Moons</strong>
+              <code>#D8DADF</code>
+              <small>Moon surface color</small>
+            </li>
+            
+            <li>
+              <span class="swatch" style="background: #F1E8D0"></span>
+              <strong>Slot/light marks</strong>
+              <code>#F1E8D0</code>
+              <small>Colony slots, pale icon details, and light markings</small>
             </li>
             
       </ul>
@@ -334,6 +459,15 @@
                 </li>
                 
                 <li class="asset-card">
+                  <a href="tokens/ship_token_p1_destroyer_damaged.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_token_p1_destroyer_damaged.png" alt="Ship Token P1 Destroyer Damaged">
+                    <span>Ship Token P1 Destroyer Damaged</span>
+                    <small>Suggested copies: 8</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_token_p1_destroyer_damaged.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
                   <a href="tokens/ship_token_p1_interceptor.png" target="_blank" rel="noopener">
                     <img src="tokens/ship_token_p1_interceptor.png" alt="Ship Token P1 Interceptor">
                     <span>Ship Token P1 Interceptor</span>
@@ -352,12 +486,30 @@
                 </li>
                 
                 <li class="asset-card">
+                  <a href="tokens/ship_token_p1_settler_damaged.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_token_p1_settler_damaged.png" alt="Ship Token P1 Settler Damaged">
+                    <span>Ship Token P1 Settler Damaged</span>
+                    <small>Suggested copies: 8</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_token_p1_settler_damaged.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
                   <a href="tokens/ship_token_p2_destroyer.png" target="_blank" rel="noopener">
                     <img src="tokens/ship_token_p2_destroyer.png" alt="Ship Token P2 Destroyer">
                     <span>Ship Token P2 Destroyer</span>
                     <small>Suggested copies: 8</small>
                   </a>
                   <button type="button" data-path="tokens/ship_token_p2_destroyer.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="tokens/ship_token_p2_destroyer_damaged.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_token_p2_destroyer_damaged.png" alt="Ship Token P2 Destroyer Damaged">
+                    <span>Ship Token P2 Destroyer Damaged</span>
+                    <small>Suggested copies: 8</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_token_p2_destroyer_damaged.png">Copy URL</button>
                 </li>
                 
                 <li class="asset-card">
@@ -379,12 +531,30 @@
                 </li>
                 
                 <li class="asset-card">
+                  <a href="tokens/ship_token_p2_settler_damaged.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_token_p2_settler_damaged.png" alt="Ship Token P2 Settler Damaged">
+                    <span>Ship Token P2 Settler Damaged</span>
+                    <small>Suggested copies: 8</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_token_p2_settler_damaged.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
                   <a href="tokens/ship_token_p3_destroyer.png" target="_blank" rel="noopener">
                     <img src="tokens/ship_token_p3_destroyer.png" alt="Ship Token P3 Destroyer">
                     <span>Ship Token P3 Destroyer</span>
                     <small>Suggested copies: 8</small>
                   </a>
                   <button type="button" data-path="tokens/ship_token_p3_destroyer.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="tokens/ship_token_p3_destroyer_damaged.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_token_p3_destroyer_damaged.png" alt="Ship Token P3 Destroyer Damaged">
+                    <span>Ship Token P3 Destroyer Damaged</span>
+                    <small>Suggested copies: 8</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_token_p3_destroyer_damaged.png">Copy URL</button>
                 </li>
                 
                 <li class="asset-card">
@@ -403,6 +573,15 @@
                     <small>Suggested copies: 8</small>
                   </a>
                   <button type="button" data-path="tokens/ship_token_p3_settler.png">Copy URL</button>
+                </li>
+                
+                <li class="asset-card">
+                  <a href="tokens/ship_token_p3_settler_damaged.png" target="_blank" rel="noopener">
+                    <img src="tokens/ship_token_p3_settler_damaged.png" alt="Ship Token P3 Settler Damaged">
+                    <span>Ship Token P3 Settler Damaged</span>
+                    <small>Suggested copies: 8</small>
+                  </a>
+                  <button type="button" data-path="tokens/ship_token_p3_settler_damaged.png">Copy URL</button>
                 </li>
                 
                 <li class="asset-card">

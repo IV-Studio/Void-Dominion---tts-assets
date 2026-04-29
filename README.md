@@ -39,6 +39,25 @@ These prototype components are not hosted files because they can be created dire
 | VP marker | 1 per player | Use physical marker or TTS built-in marker | For VP track |
 | VP track | 1 | Not created | Can be built in TTS or added to a future board |
 
+## TTS Color Hex Reference
+
+| Use | Hex | Notes |
+|---|---|---|
+| P1 player pieces | `#F4F4EE` | Ships, flags, colony cubes, outpost cube, pawns, VP marker |
+| P2 player pieces | `#2F6FEA` | Ships, flags, colony cubes, outpost cube, pawns, VP marker |
+| P3 player pieces | `#F2C84B` | Ships, flags, colony cubes, outpost cube, pawns, VP marker |
+| Ship body fill | `#253147` | Dark ship silhouette fill used by the token art |
+| Standard Attack die | `#C65A3A` | Warm combat die color |
+| Spicy Attack die | `#CF4E62` | Warm combat die color |
+| Bombardment die | `#D99A35` | Warm combat die color |
+| Aggressive Defense die | `#3F83C5` | Cool defense die color |
+| Retreat die | `#2FA6A0` | Cool defense die color |
+| Green planets | `#63A66F` | Planet/system color |
+| Red planets | `#CF5050` | Planet/system color |
+| Nexus purple | `#866FC5` | Center planet/system color |
+| Moons | `#D8DADF` | Moon surface color |
+| Slot/light marks | `#F1E8D0` | Colony slots, pale icon details, and light markings |
+
 Example hosted URL after publishing:
 
 ```text
