@@ -19,15 +19,12 @@ Use GitHub Pages with:
 | dice_reference | `cards/dice_reference.png` | 1 | 1 | 1 | 4096x2867 |
 | bonus_icon_reference | `cards/bonus_icon_reference.png` | 1 | 1 | 1 | 4096x2895 |
 | system_bonus_cards | `cards/system_bonus_cards.png` | 4 | 2 | 8 | 4096x2868 |
-| utility_tokens | `tokens/utility_tokens.png` | 5 | 1 | 5 | 4095x819 |
-| ship_tokens | `tokens/ship_tokens.png` | 3 | 3 | 9 | 4095x4095 |
-| sector_flags | `tokens/sector_flags.png` | 3 | 1 | 3 | 4095x1365 |
 
 Use `cards/objective_deck.png` as the objective deck face sheet.
 Use `cards/objective_card_back.png` as the objective deck back image.
 Use `rules/current_game_reference.pdf` as the in-table rules reference.
 Use `dice/dice_standard_attack.png`, `dice/dice_spicy_attack.png`, `dice/dice_bombardment.png`, `dice/dice_aggressive_defense.png`, and `dice/dice_retreat.png` as custom D6 texture images.
-Use token sheets for utility tokens, ship silhouettes, and player sector flags.
+Use individual token images for utility tokens, ship silhouettes, and player sector flags. Suggested copy counts are listed on the index page.
 
 ## Generic TTS Pieces To Make
 
